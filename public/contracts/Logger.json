@@ -1,0 +1,237 @@
+{
+  "contractName": "Logger",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "emitLog",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"emitLog\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"ABSTRACT Is a way for designer to say that any 'child' of the abstract contract has to implement specified methods to use them. INHERITANCE private   function can only be used from within the current contract internal  function can be called from within the contract, or the contracts that are inheriting the current contract. public    function can be called from anywhere, inside or outside the smart contract. external  function can only be called from outside of the smart contract, not inside it.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Logger.sol\":\"Logger\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Logger.sol\":{\"keccak256\":\"0xce2d974fff904403667d9a7f2e93a38f157cd7f28b91cde35833b1ca77ee159e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://78716ee2c2d96bcb6721c89aab13ba693f06d44c36f85c9fcdb8808fe79edb28\",\"dweb:/ipfs/QmexRFGpV7Mimv97ETPYkFSiFeutzmQBX8iGPCtjKBZVKF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\n/**\r\n  ABSTRACT\r\n  Is a way for designer to say that any 'child' of the abstract contract has to\r\n  implement specified methods to use them.\r\n\r\n  INHERITANCE\r\n  private   function can only be used from within the current contract\r\n  internal  function can be called from within the contract, or the contracts that are inheriting\r\n            the current contract.\r\n  public    function can be called from anywhere, inside or outside the smart contract.\r\n  external  function can only be called from outside of the smart contract, not inside it.\r\n */\r\n\r\nabstract contract Logger {\r\n    // if a function does not need a function body then it needs the virtual keyword\r\n    function emitLog() public pure virtual returns (bytes32);\r\n\r\n    function test() internal pure returns (uint256) {\r\n        return 100;\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\james\\Documents\\GitHub\\blockchain\\faucet\\contracts\\Logger.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Logger.sol",
+    "exportedSymbols": {
+      "Logger": [
+        194
+      ]
+    },
+    "id": 195,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 179,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:2"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 180,
+          "nodeType": "StructuredDocumentation",
+          "src": "69:549:2",
+          "text": "ABSTRACT\nIs a way for designer to say that any 'child' of the abstract contract has to\nimplement specified methods to use them.\nINHERITANCE\nprivate   function can only be used from within the current contract\ninternal  function can be called from within the contract, or the contracts that are inheriting\nthe current contract.\npublic    function can be called from anywhere, inside or outside the smart contract.\nexternal  function can only be called from outside of the smart contract, not inside it."
+        },
+        "fullyImplemented": false,
+        "id": 194,
+        "linearizedBaseContracts": [
+          194
+        ],
+        "name": "Logger",
+        "nameLocation": "640:6:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f42c13bf",
+            "id": 185,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "emitLog",
+            "nameLocation": "749:7:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 181,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "756:2:2"
+            },
+            "returnParameters": {
+              "id": 184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 183,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 185,
+                  "src": "788:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 182,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:9:2"
+            },
+            "scope": 194,
+            "src": "740:57:2",
+            "stateMutability": "pure",
+            "virtual": true,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 192,
+              "nodeType": "Block",
+              "src": "853:29:2",
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "313030",
+                    "id": 190,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "871:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_100_by_1",
+                      "typeString": "int_const 100"
+                    },
+                    "value": "100"
+                  },
+                  "functionReturnParameters": 189,
+                  "id": 191,
+                  "nodeType": "Return",
+                  "src": "864:10:2"
+                }
+              ]
+            },
+            "id": 193,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "test",
+            "nameLocation": "814:4:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 186,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "818:2:2"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 188,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 193,
+                  "src": "844:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 187,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "844:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "843:9:2"
+            },
+            "scope": 194,
+            "src": "805:77:2",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 195,
+        "src": "622:263:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:854:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-02-16T09:26:13.437Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "notice": "ABSTRACT Is a way for designer to say that any 'child' of the abstract contract has to implement specified methods to use them. INHERITANCE private   function can only be used from within the current contract internal  function can be called from within the contract, or the contracts that are inheriting the current contract. public    function can be called from anywhere, inside or outside the smart contract. external  function can only be called from outside of the smart contract, not inside it.",
+    "version": 1
+  }
+}
